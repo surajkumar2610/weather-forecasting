@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav class="top">
+    <div class="menu" id="check" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>          
+    <label class="logo">WeatherCast</label>
+    <ul class="nav-links">
+        <li><a href="index.html" class="home">Home</a></li>
+        <li class="contact">
+            <a href="#">Contact</a>
+            <div class="sub">
+                <ul>
+                    <li><a href="tel:7992205297">Call</a></li>
+                    <li><a href="mailto:suraj.21scse1010044@galgotiasuniversity.edu.in">Mail</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="about.html" target="_blank" class="about">About</a></li>
+        <li><a href="mailto:suraj.21scse1010044@galgotiasuniversity.edu.in" class="feed">Feedback</a></li>
+    </ul>
+</nav>
+
+    <div class="container">
+       <h1>Weather App</h1>
+<div class="search">
+    <input type="text" id="cityInput" placeholder="Enter city name" class="search-input">
+    <button id="searchButton" class="search-button">Search</button>
+</div>
+
+       <div id="weatherInfo" class="weather-card">
+    <div class="weather-header">
+        <h2><i class="material-icons weather-icon">location_city</i> Weather in <span id="cityName"></span></h2>
+    </div>
+    <div class="weather-body">
+        <div class="weather-detail">
+            <p><i class="material-icons weather-icon">thermostat</i>Temperature: <span id="temperature"></span>&deg;C</p>
+        </div>
+        <div class="weather-detail">
+            <p><i class="material-icons weather-icon">invert_colors</i>Humidity: <span id="humidity"></span>%</p>
+        </div>
+        <div class="weather-detail">
+            <p><i class="material-icons weather-icon">access_time</i>Time zone: <span id="zone"></span></p>
+        </div>
+        <div class="weather-detail">
+            <p><i class="material-icons weather-icon">air</i>Wind Speed: <span id="speed"></span> | Wind Direction: <span id="direction"></span></p>
+        </div>
+        <div class="weather-detail">
+            <p><i class="material-icons weather-icon">compress</i>Pressure: <span id="pressure"></span> | Feels like: <span id="feel"></span></p>
+        </div>
+        <div class="weather-detail">
+            <p><i class="material-icons weather-icon">sunny</i>UV Index: <span id="index"></span></p>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
